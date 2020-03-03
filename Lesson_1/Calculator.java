@@ -1,7 +1,7 @@
 public class Calculator {
     public static void main(String[] args) {
         int firstNum = 7;
-        int secondNum = 2;
+        int secondNum = 0;
         char operation = '^';
         double result = 0;
         if (operation == '+') {
@@ -18,6 +18,10 @@ public class Calculator {
                 result = 1.0 * firstNum / secondNum;
             }
         } else if (operation == '%') {
+            if (secondNum == 0) {
+                System.out.println("ошибка: деление на ноль!");
+                return;
+            }
             result = firstNum % secondNum;
         } else if (operation == '^') {
             result = 1;
