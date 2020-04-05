@@ -1,3 +1,5 @@
+package com.startjava.lesson_2_3.app;
+
 public class Person {
     /**
      * Напишите в нем поля (атрибуты), описывающие характеристики человека:

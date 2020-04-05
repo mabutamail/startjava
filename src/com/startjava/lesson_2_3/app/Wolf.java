@@ -1,3 +1,5 @@
+package com.startjava.lesson_2_3.app;
+
 public class Wolf {
     /**
      * напишите в нем поля: пол, кличка, вес, возраст, окрас

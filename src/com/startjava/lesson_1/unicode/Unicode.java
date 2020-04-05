@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.unicode;
+
 import java.nio.charset.Charset;
 
 public class Unicode {
