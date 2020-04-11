@@ -1,21 +1,17 @@
-package com.startjava.lesson_2_3.game;
+package com.startjava.lesson_2_3_4.game;
+
+
+import java.util.Arrays;
 
 public class Player {
     private String name;
     private int number;
-
-    public Player() {
-    }
+    private int[] numbers = new int[10];
+    int count = 0;
 
     public Player(String name) {
         this.name = name;
     }
-
-    public Player(String name, int number) {
-        this.name = name;
-        this.number = number;
-    }
-
 
     public String getName() {
         return name;
@@ -30,7 +26,17 @@ public class Player {
     }
 
     public void setNumber(int number) {
+        this.numbers[count] = number;
         this.number = number;
+        count++;
+    }
+
+    public int[] getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(int[] numbers) {
+        this.numbers = numbers;
     }
 
     @Override
@@ -38,6 +44,8 @@ public class Player {
         return "Player{" +
                 "name='" + name + '\'' +
                 ", number=" + number +
+                ", numbers=" + Arrays.toString(numbers) +
+                ", count=" + count +
                 '}';
     }
 }
